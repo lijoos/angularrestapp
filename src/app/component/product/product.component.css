@@ -1,0 +1,8 @@
+.div-border{
+    border: 1px solid black;
+    background-color: azure
+}
+th {
+    background-color:darkcyan;
+    color: white;
+}

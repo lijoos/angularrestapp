@@ -1,0 +1,27 @@
+<div class="row ">
+  <div class="col-md-6 col-md-offset-3">
+<table class="table div-border">
+  <thead>
+    <tr>
+      <th scope="col">NO</th>
+      <th scope="col">Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Description</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products;let i=index">
+      <td>{{i}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.category}}</td>
+      <td>{{product.description}}</td>
+      <td> <a class="btn btn-primary" [routerLink]="['/products/new',i]" >edit</a></td>
+     
+      
+    </tr>
+    
+  </tbody>
+</table>
+  </div>
+</div>
